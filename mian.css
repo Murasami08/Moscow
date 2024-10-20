@@ -1,0 +1,502 @@
+@font-face {
+    font-family: "ALS Hauss";
+    src: 
+        local("ALS Hauss"),
+        url("./ALSHauss-Bold.woff") format("woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+body{
+    padding: 5% 0;
+}
+
+p{
+    position: absolute;
+    width: fit-content;
+    font-family: "ALS Hauss", serif;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #3A3A3A;
+    padding: 3px 8px;
+    z-index: 10;
+}
+
+[class*="svg"] {
+    z-index: -1;
+}
+
+.profession-text.active{
+    border-radius: 6px;
+    border: 1px solid rgba(244, 244, 244, 1);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 530px;
+    height: 530px;
+    border-radius: 100%;
+    border: 2.5px solid #ADADAD;
+}
+
+.professions{
+    position: relative;
+    width: 255px;
+    height: 255px;
+    border-radius: 100%;
+    border: 2.5px solid #ADADAD;
+
+}
+
+.profession{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #ADADAD;
+    cursor: pointer;
+}
+
+.profession.active {
+    background-color: #00A372;
+    outline: 1px solid #00A372;
+    outline-offset: 4px;
+}
+
+.profession.mega-active {
+    background-color: #00A372;
+}
+
+.skill{
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #FFD4AD;
+    border-radius: 100%;
+}
+.skill.active{
+    background-color: #FF7A00;
+}
+
+.skill.mega-active{
+    background-color: #FF7A00;
+    outline: 1px solid #FF7A00;
+    outline-offset: 5px;
+}
+
+.skill_1 {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skill_2 {
+    top: 1%;
+    right: 150px;
+}
+.skill_3 {
+    top: 9%;
+    right: 75px;
+}
+.skill_4 {
+    top: 21%;
+    right: 23px;
+}
+.skill_5 {
+    top: 38%;
+    right: -12px;
+}
+.skill_6 {
+    top: 58%;
+    right: -12px;
+}
+.skill_7 {
+    bottom: 21%;
+    right: 23px;
+}
+.skill_8 {
+    bottom: 9%;
+    right: 75px;
+}
+.skill_9 {
+    bottom: 1%;
+    right: 150px;
+}
+.skill_10 {
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skill_11 {
+    bottom: 1%;
+    left: 150px;
+}
+.skill_12 {
+    bottom: 9%;
+    left: 75px;
+}
+.skill_13 {
+    bottom: 21%;
+    left: 23px;
+}
+.skill_14 {
+    top: 58%;
+    left: -12px;
+}
+.skill_15 {
+    top: 38%;
+    left: -12px;
+}
+.skill_16 {
+    top: 21%;
+    left: 23px;
+}
+.skill_17 {
+    top: 9%;
+    left: 75px;
+}
+.skill_18 {
+    top: 1%;
+    left: 150px;
+}
+
+.skill-text {
+    color: #ADADAD;
+}
+
+.skill-text.active{
+    color: #3A3A3A;
+}
+
+.skill_text-1{
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skill_text-2 {
+    top: 0;
+    right: 110px;
+}
+.skill_text-3 {
+    top: 8%;
+    right: 40px;
+}
+.skill_text-4 {
+    top: 20%;
+    right: -30px;
+}
+.skill_text-5 {
+    top: 37%;
+    right: -62px;
+}
+.skill_text-6 {
+    top: 57%;
+    right: -55px;
+}
+.skill_text-7 {
+    bottom: 20%;
+    right: -30px;
+}
+.skill_text-8 {
+    bottom: 8%;
+    right: 45px;
+}
+.skill_text-9 {
+    bottom: 0;
+    right: 100px;
+}
+.skill_text-10 {
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skill_text-11 {
+    bottom: 0;
+    left: 50px;
+}
+.skill_text-12 {
+    bottom: 9%;
+    left: 20px;
+}
+.skill_text-13 {
+    bottom: 21%;
+    left: -80px;
+}
+.skill_text-14 {
+    top: 60%;
+    left: -62px;
+}
+.skill_text-15 {
+    top: 37%;
+    left: -55px;
+}
+.skill_text-16 {
+    top: 20%;
+    left: -25px;
+}
+.skill_text-17 {
+    top: 8%;
+    left: 35px;
+}
+.skill_text-18 {
+    top: 0;
+    left: 110px;
+}
+
+.profession_1-svg{
+    position: absolute;
+    top: -125px;
+    left: -87px;
+   
+}
+.profession_1 {
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.profession_2 {
+    top: 10%;
+    right: 23px;
+}
+.profession_3 {
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+}
+.profession_4 {
+    bottom: 10%;
+    right: 23px;
+}
+.profession_5 {
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.profession_6 {
+    bottom: 10%;
+    left: 23px;
+}
+.profession_7 {
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+}
+.profession_8 {
+    top: 10%;
+    left: 23px;
+}
+
+.profession_1-text {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profession_2-text {
+    top: 10%;
+    right: -100px;
+}
+
+.profession_3-text {
+    top: 50%;
+    right: -110px;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.profession_4-text {
+    bottom: 5%;
+    right: -70px;
+    text-align: left;
+}
+
+.profession_5-text {
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profession_6-text {
+    bottom: 5%;
+    left: -70px;
+    text-align: right;
+}
+
+.profession_7-text {
+    top: 50%;
+    left: -110px;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.profession_8-text {
+    top: 5%;
+    left: -100px;
+    text-align: right;
+}
+
+[class*="-svg"]{
+    position: absolute;
+    opacity: 0;
+}
+
+[class*="-svg active"]{
+    opacity: 1;
+}
+
+.skill_1-svg{
+    top: 0;
+    left: 48px;
+}
+
+
+.skill_2-svg{
+    top: 20px;
+    right: 164px;
+}
+
+.skill_3-svg{
+    top: 70px;
+    right: 83px;
+}
+
+.skill_4-svg{
+    top: 105px;
+    right: 15px;
+}
+
+.skill_5-svg{
+    top: 100px;
+    right: 10px;
+}
+
+.skill_6-svg{
+    top: 265px;
+    right: 10px;
+}
+
+.skill_7-svg{
+    bottom: 130px;
+    right: 42px;
+}
+
+.skill_8-svg{
+    bottom: 75px;
+    right: 90px;
+}
+
+.skill_9-svg{
+    bottom: 32px;
+    right: 164px;
+}
+
+.skill_10-svg{
+    bottom: 10px;
+    right: 260px;
+}
+
+.skill_11-svg{
+    bottom: 20px;
+    left: 85px;
+}
+
+.skill_12-svg{
+    bottom: 65px;
+    left: 95px;
+}
+
+.skill_13-svg{
+    bottom: 90px;
+    left: 37px;
+}
+
+.skill_14-svg{
+    bottom: 102px;
+    left: 5px;
+}
+
+.skill_15-svg{
+    bottom: 105px;
+    left: 15px;
+}
+
+.skill_16-svg{
+    bottom: 83px;
+    left: 50px;
+}
+
+.skill_17-svg{
+    bottom: 130px;
+    left: 80px;
+}
+
+.skill_18-svg{
+    bottom: 170px;
+    left: 100px;
+}
+
+.profession_2-svg{
+    top: -130px;
+    right: -53px;
+}
+
+.profession_3-svg{
+    top: -12px;
+    right: -140px;
+}
+
+.profession_4-svg{
+    top:  -117px;
+    right: -122px;
+}
+
+.profession_5-svg {
+    top: -130px;
+    right: -75px;
+}
+
+.profession_6-svg {
+    top: -132px;
+    left: -95px;
+}
+
+.profession_7-svg{
+    top: -10px;
+    left: -130px;
+}
+
+.profession_8-svg{
+    top: -115px;
+    left: -130px;
+}
+
+[class$="active"]{
+    opacity: 1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear alternate forwards;
+}
+
+@keyframes dash {
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
